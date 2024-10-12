@@ -1,9 +1,12 @@
 import express from "express";
+import dotenv from dotenv;
 
 import { routerApi } from "./routes/index.routes.js";
 
 const app = express();
 const port = 9222;
+
+dotenv.config();
 
 app.use(express.json())
 
